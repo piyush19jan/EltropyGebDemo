@@ -9,17 +9,17 @@ import geb.eltropy.page.ProfilePage
 @Stepwise
 class EltropyTestSpec extends GebReportingSpec{
 	
-static username = ""
-static password = ""
-static loggedInUser = ""
-static searchTerm = ""
-static fNameUpdate = ""
-static lNameUpdate = ""
-static uNameUpdate = ""
-static passworUpdate = ""
-static rePasswordUpdate = ""
+static username = "" // Enter LinkedIn UserID
+static password = "" // Enter LinkedIn Password
+static loggedInUser = "" // First name of logged in user
+static searchTerm = "" // Specify the topic to be searched
+static fNameUpdate = "" // First name to be updates
+static lNameUpdate = "" // Last name to be updates
+static uNameUpdate = "" // User name to be updates
+static passworUpdate = "" // Password to be updates
+static rePasswordUpdate = "" // Re-enter password to be updates
 	
-
+//Test Case 1
 	def "Login using linkedIn"(){
 		
 		given: 'launch base URL and validate the login page components'
@@ -39,6 +39,7 @@ static rePasswordUpdate = ""
 			
 	}
 
+	//Test Case 2
 	def "verify user dashboard"(){
 		
 		when: 'After Successful login'
@@ -49,6 +50,7 @@ static rePasswordUpdate = ""
 			verifyDashboardComponents()
 	}
 	
+	//Test Case 3
 	def "perform a search on dashboard"(){
 		when : 'User search a topic on Dashboard'
 			at DashboardPage
@@ -58,6 +60,7 @@ static rePasswordUpdate = ""
 			verifySearchResult(searchTerm)
 	}
 	
+	//Test Case 4
 	def "update user profile"(){
 			
 		when : 'user clicks on Profile'

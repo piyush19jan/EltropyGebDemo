@@ -10,6 +10,11 @@ class LinkedInSignInModule extends Module{
 		allowButton(to : DashboardPage) { $(".allow") }
 	}
 	
+	/**
+	 * perform a login action on linkedIn auth page
+	 * @param username 
+	 * @param  pwd
+	 */
 	def loginWithLinkedIn(username, pwd){
 		email << username
 		password << pwd

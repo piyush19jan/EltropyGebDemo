@@ -21,6 +21,14 @@ class ProfilePage extends Page{
 	}
 	
 	
+	/**
+	 * Update the user details as per the given input
+	 * @param fName = First name to be updated
+	 * @param lName = Last name to be updated
+	 * @param uName = Username to be updated
+	 * @param password = new password
+	 * @param retypePassword = confirm password 
+	 */
 	
 	def updateUserDetails(String fName, String lName, String uName, String password, String retypePassword){
 			firstName.value("")
@@ -41,6 +49,11 @@ class ProfilePage extends Page{
 		
 	}
 	
+	/**
+	 * Validate that user details has been successfully updated
+	 * @param fName = First name of user after update 
+	 */
+	 
 	def verifyUpdatedUserProfile(String fName){
 		successMessage.isDisplayed()
 		user.text() == fName

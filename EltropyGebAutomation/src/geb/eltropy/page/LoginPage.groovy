@@ -33,6 +33,10 @@ class LoginPage extends Page{
 			 assert aboutEltropyButton
 		 }
 		 
+		 /**
+		  * Perform a click on sign in button on Home page, wait for the modal to appear and click on SignIn using linkedIn 
+		  */
+		 
 		 def clickLinkedInSignInButton(){
 			 signInButton.click()
 			 waitFor {
@@ -41,12 +45,22 @@ class LoginPage extends Page{
 			 signInLinkedIn.click()
 		 }
 		 
+		 /**
+		  * validate that user has landed on correct page and then enter login credentails'
+		  * @param username = Email address of the user 
+		  * @param password = password of the user 
+		  */
+		 
 		 def enterLoginCredentials(username, password){
 			 waitFor {
 				 title == "Authorize | LinkedIn"
 			 }
 			 linkedInModule.loginWithLinkedIn(username, password)
 		 }
+		 
+		 /**
+		  * validate the login error page in case of incorrect login credentails 
+		  */
 		 
 		 def validateLoginErrorPage(){
 			 loginErrorMessage.text() == "The email address or password you provided does not match our records."
