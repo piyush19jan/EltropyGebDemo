@@ -13,6 +13,21 @@
 	
 2. How to execute
 	Curently, the test can be run directly from the IDE as a Junit test. Run EltropyTestSpec.groovy class as Junit and the test will execute. Working on finding a solution to run it thru maven since the surefire plugin is not finding any test to execute. After the problem is resolved it can be rum directly from the command line.
+	
+Steps:
+For executing the test cases enter the following information in EltropyTestSpec.groovy 
+1. linkedIn username
+2. linkedIn password
+3. First name of the logged in user
+4. topic name to be searched
+5. any following user information that needs to be updated.
+	a) First Name
+	b) Last Name
+	c) Username
+	d) password
+	e) reset password
+	
+
 
 	
 	
