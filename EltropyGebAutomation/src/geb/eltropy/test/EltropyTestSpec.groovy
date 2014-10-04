@@ -32,7 +32,7 @@ static rePasswordUpdate = ""
 		and: 'Enter the login credentails '
 			enterLoginCredentials(username, password)
 		
-		then: 'verify that user lands on his/her Dashboard'
+		then: 'verify that user lands on his/her Dashboard and confirm user First Name'
 			at DashboardPage
 			validateLoggedInUser(loggedInUser)
 			Thread.sleep(3000)
@@ -69,6 +69,6 @@ static rePasswordUpdate = ""
 			updateUserDetails(fNameUpdate, lNameUpdate, uNameUpdate, passworUpdate, rePasswordUpdate)
 			
 		then : 'user profile is successfully updated'
-			verifyUpdatedUserProfile(loggedInUser+fNameUpdate)
+			verifyUpdatedUserProfile(fNameUpdate)
 	}
 }
