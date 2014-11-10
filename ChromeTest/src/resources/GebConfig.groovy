@@ -1,8 +1,6 @@
-mport com.google.common.collect.ImmutableMap
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeDriverService
 import org.openqa.selenium.firefox.FirefoxDriver
-import org.openqa.selenium.phantomjs.PhantomJSDriver
 
 waiting {
     timeout = 2
@@ -16,7 +14,8 @@ environments {
         File chromeDriverLocation = new File("./resources/chromedriver_LINUX_64")
         ChromeDriverService chromeDriverService   = new ChromeDriverService.Builder()
                 .usingDriverExecutable(chromeDriverLocation)
-                .usingAnyFreePort().withEnvironment(ImmutableMap.of("DISPLAY", ":1")).build()
+                .usingAnyFreePort().withEnvironment("DISPLAY", ":1").build()
+                //.withEnvironment(ImmutableMap.of("DISPLAY", ":1")).build()
         chromeDriverService.start()
         driver = { new ChromeDriver(chromeDriverService) }
     }
