@@ -1,0 +1,764 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="robots" content="noindex,follow,noarchive,nocache" />
+  <link rel="shortcut icon" href="/assets/favicon-black-c8ad662feae846c407a304add1495212.ico" type="image/x-icon" />
+  <title>Topics</title>
+  
+  <meta name="layout" content="sparkwave" />
+  
+  <link rel="stylesheet" href="/assets/dashboard-661147b04a5ac7f55e58bacf85763be7.css" />
+  <script type="text/javascript" async="" src="http://cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/assets/lib/require-2.1.10.min-dcfd3bc0c00177c86ca41bab6e578200.js" type="text/javascript" data-main="/assets/views/dashboard.js?b=1.10.1" defer="defer"></script>
+
+
+  <link rel="stylesheet" href="/assets/responsive-91120fc0e426742cd2986592d0cc6ede.css" />
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script type="text/javascript">
+      if(document.location.pathname !== "/oldbrowser")
+        window.location = "/oldbrowser";
+    </script>
+  <![endif]-->
+  <script type="text/javascript">
+    var domainSettings = {"class":"com.eltropy.model.user.EltropyDomainSettings","id":95481,"advanceUserGroup":false,"allowAssignments":true,"allowChapterCreationByEmail":true,"allowChapterUpload":true,"allowCurationFromBox":false,"allowCurationFromGoogleDrive":true,"allowCurationFromOneDrive":true,"allowEditingTagsOnChapterPage":false,"allowOneDriveSync":false,"allowSharingOfTopic":true,"allowZipUpload":true,"bannerBackgroundColor":"#333","bannerBackgroundImage":"http://cdn1.eltropy.com/images/eltropy_bg16.jpg","bannerSideImage":null,"bannerText":"Share. Collaborate. Measure.","bannerTextColor":"#fff","customStyles":null,"dateCreated":"2014-03-07T16:40:57Z","deleteFromOneDriveOnChapterDelete":true,"elDomain":{"class":"com.eltropy.model.user.EltropyDomain","id":72430},"enableBoxUpload":false,"enableCachingForAnalyticsPage":true,"enableDiscussions":false,"enableModulesTabOnDashboard":false,"enableOriginalTopicPageStyling":false,"feedbackEmailTo":"web-feedback@eltropy.com","forceLessonSequentialAccess":false,"fromEmailAddress":"Eltropy &lt;no-reply@eltropy.com&gt;","hidePlanSidebar":false,"hideTopicSidebar":false,"isChapterDurationRequired":false,"isSignInRequiredOnTopicPage":true,"lastUpdated":"2014-10-01T13:37:34Z","navBarImage":null,"navBarText":null,"openAdvancedViewInEditChapterModal":false,"passwordProtectContentSharing":false,"requireEmailConfirmation":true,"sendMailOnPlanStarted":true,"shareContentEmailFromEmailClient":false,"showDownloadLinksForChapters":false,"showEltropyBranding":true,"showFeedback":true,"showLastUpdatedOnPlanPage":true,"showMediaTags":false,"showSubTopicsExpandedOnTopicPage":false,"showSyncAnalyticsTab":false,"showViewOriginalButton":false,"signInButtonPresent":false,"uploadPdfToPdfTron":false};
+  </script>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/assets/views/dashboard.js?b=1.10.1" src="/assets/views/dashboard.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/assets/config.js?b=1.10.1" src="/assets/config.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/assets/common.js?b=1.10.1" src="/assets/common.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="/assets/lib/jquery-1.11.0.min.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockout" src="/assets/lib/knockout-2.3.0.min.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vModels/evaluateViewModel" src="/assets/lib/../viewModels/evaluateViewModel.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vModels/discussionsViewModel" src="/assets/lib/../viewModels/discussionsViewModel.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vModels/dashboardViewModel" src="/assets/lib/../viewModels/dashboardViewModel.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vModels/profileViewModel" src="/assets/lib/../viewModels/profileViewModel.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/utils" src="/assets/lib/../utils/utils.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.ui.sortable" src="/assets/lib/jqueryui/sortable.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="classie" src="/assets/lib/classie.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="/assets/lib/bootstrap-2.3.2.min.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.history" src="/assets/lib/jquery.history.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="flatNotify" src="/assets/lib/flatNotify-0.1.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dModels/module-model" src="/assets/lib/../dataModels/module-model.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootbox" src="/assets/lib/bootbox-3.3.0.min.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="koBootstrap" src="/assets/lib/knockout-bootstrap.min.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core" src="/assets/lib/jqueryui/core.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mouse" src="/assets/lib/jqueryui/mouse.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="widget" src="/assets/lib/jqueryui/widget.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dModels/discussion-model" src="/assets/lib/../dataModels/discussion-model.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap-multiselect" src="/assets/lib/bootstrap-multiselect.js?b=1.10.1"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="koSortable" src="/assets/lib/knockout-sortable.min.js?b=1.10.1"></script></head>
+<body>
+  
+    
+    <div class="eltropy-navbar navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="">
+          <button type="button" id="narrowButton" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="brand">
+            <div class="brand-inner-logo">
+              
+                <a href="/?index=1" id="nav-logo">
+                  Eltropy
+                </a>
+              
+            </div>
+          </div>
+          
+            <a id="nav-dashboard-icon" href="/dashboard" data-toggle="tooltip" data-animation="false" data-original-title="My Dashboard" data-placement="bottom">
+              <img src="/assets/nav-dash-icon-18cc3faa400b2400d2ce54163e80c6d8.png" />
+            </a>
+            <div class="icon-nav-bar" id="iconNavBar" style="right: 101px;">
+              <ul>
+                
+                 
+              </ul>
+            </div>
+          
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right" id="nav-dd-con">
+              
+                <li class="dropdown">
+                  <a href="#" id="user-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                    Piyush <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="user-dropdown" role="menu">
+                    
+                    <li><a href="/auth/logout" id="nav-logout-button">Logout</a></li>
+                    
+                      <div class="nav-powered-by">
+                        <a href="http://www.eltropy.com/" target="_blank">
+                          <span>Powered By</span>
+                          <span>Eltropy</span>
+                        </a>
+                      </div>
+                    
+                  </ul>
+                </li>
+              
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </div>
+  
+
+  
+  <div id="disabled-overlay" style="display: none;">
+    <span>
+      <img src="/assets/loader-alt-2d43d78d069f2a00f008ff949cff665f.gif" height="80" width="80" />
+    </span>
+  </div>
+
+  
+  <div id="time-inactivity-overlay">
+  </div>
+
+  
+  <div class="" id="eltropy-container">
+    
+  <script type="text/javascript">
+    document.getElementById('disabled-overlay').style.display = 'block';
+    var enableEvaluationTab = false;
+    var sessionUserId = "209798";
+    var useEmailClientForSharing = "true";
+  </script>
+  <div class="container-fluid admin-con user-dash-tab-con" id="ndashboard">
+    <div class="row-fluid">
+      <div class="tabbable tabs-left row-fluid manageTabs">
+        <ul class="nav nav-tabs">
+
+          
+          
+            <li class="active">
+              <a id="topicsTab" href="#lA" data-toggle="tab" onclick="updateHistory(this)">
+                <i class="icon-file-text icon-3x"></i>
+                TOPICS
+              </a>
+            </li>
+          
+
+          
+          
+
+          
+          
+
+          
+          
+
+          
+          <li class="">
+            <a href="#lC" id="profileTab" data-toggle="tab" onclick="updateHistory(this)">
+              <div class="auIconDashboard"></div>
+              PROFILE
+            </a>
+          </li>
+
+          
+            <a class="powered-by" href="http://eltropy.com" target="_blank">
+              <div>Powered By</div>
+              <div>Eltropy</div>
+            </a>
+          
+        </ul>
+        <div class="tab-content">
+
+          
+          
+            <div class="tab-pane row-fluid active" id="lA" style="">
+  <div class="formPane">
+    <div class="container-fluid userDashboard">
+      <div class="row-fluid">
+        <div class="span12">
+          
+          <div class="row-fluid m-top-20">
+            <div class="pull-left span9 topic-search-con">
+              <div class="row-fluid">
+                <input placeholder="Search for topics" type="search" name="q" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" class="topic-search" />
+                <i class="icon-remove" data-bind="click: clearSearch, visible: !showResults()"></i>
+              </div>
+              <div class="search-dropdown row-fluid" data-bind="visible: (query() != '' &amp;&amp; showResults())" id="topicSearchCon" style="display: none;">
+                <div data-bind="template: { name: 'search-result-template', foreach:searchResults }">
+    <div class="search-result clearfix" data-bind="click: $root.viewTopicById.bind($data, topicId, name)">
+      <span data-bind="text: name" class="topic-title">Piyush Interview Topic</span>
+      
+    </div>
+  </div>
+              </div>
+            </div>
+            <div class="pull-right view-switch-btn-grp">
+              
+              
+              
+                
+              
+              
+              <button data-toggle="tooltip" data-bind="css:{'active' : topicsView() == 'cards'}, click: changeTopicView.bind($data, 'cards')" class="btn e-icon-a cards active">
+                <img src="/assets/card-icon-1271bb047d1c2c4d179863dbd0081d02.png" />
+              </button>
+              
+              <button data-bind="css:{'active' : topicsView() == 'list1'}, click: changeTopicView.bind($data, 'list1')" class="btn e-icon-a list1">
+                <img src="/assets/single-icon-d456cf81ce58439ad87a566ce4040bf1.png" />
+              </button>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="alert alert-error m-top-20 hide" id="topicsTabError">
+              Hey there
+            </div>
+            <div class="alert alert-success m-top-20 hide" id="topicsTabSuccess">
+              Hey there
+            </div>
+          </div>
+          <!-- ko if: $root.topicsView() == 'cards' -->
+            <div class="row-fluid">
+              <div class="span3">
+                <!-- ko foreach : plans -->
+                  <!-- ko if : $index()%4 == 0 -->
+                    <div data-bind="template: { name: 'card-template', data: $data }">
+    <div class="span12 card e-topic-card e-topic-card-orange" data-bind="attr : { id: 'plan-'+topicId }, css: $root.setCorner(percentComplete), click: $root.viewTopicById.bind($data, topicId, name)" id="plan-211551">
+      <div class="card-heading simple">
+        <a data-bind="text: name">Piyush Interview Topic</a>
+      </div>
+      <div class="notification-label" data-bind="text: nChaptersUpdated, visible: (nChaptersUpdated &gt; 0), attr: { 'data-original-title' : nChaptersUpdated + ' chapters updated' }" data-toggle="tooltip" data-container="body" data-original-title="0 chapters updated" style="display: none;">0</div>
+      
+        <!-- ko if: dropdownAccess || editAccess -->
+          <div class="card-dropdown-con">
+            <div class="metric-con metric-dd-button">
+              <div data-toggle="dropdown" data-bind="click: $root.toggleDropdown, clickBubble: false">
+                <span class="icon-caret-down"></span>
+              </div>
+              <ul role="menu" class="dropdown-menu">
+                <!-- ko if: editAccess -->
+                  <li>
+                    <a data-bind="click: function(){ return true }, clickBubble: false, attr: { href: '/edit/topic/'+topicId }" href="/edit/topic/211551">Edit</a>
+                  </li>
+                <!-- /ko -->
+                <!-- ko if: true || (editAccess || false) -->
+                  <li>
+                    <a class="share-popover-btn" data-bind="popover: {template: 'popoverTemplate', placement: 'bottom', container: '#plan-' + topicId},
+                      click: $root.setShareTopicDetails.bind($data,topicId,name), clickBubble: false, visible: true" data-placement="bottom">Share</a>
+                  </li>
+                <!-- /ko -->
+                <!-- ko if: false --><!-- /ko -->
+              </ul>
+            </div>
+          </div>
+        <!-- /ko -->
+      
+      <!-- ko if: curator != null --><!-- /ko -->
+      <div class="drag-text hide text-center"><i class="icon-move"></i> DRAG &amp; DROP</div>
+    </div>
+  </div>
+                  <!-- /ko -->
+                <!-- /ko -->
+              </div>
+              <div class="span3">
+                <!-- ko foreach : plans -->
+                  <!-- ko if : $index()%4 == 1 --><!-- /ko -->
+                <!-- /ko -->
+              </div>
+              <div class="span3">
+                <!-- ko foreach : plans -->
+                  <!-- ko if : $index()%4 == 2 --><!-- /ko -->
+                <!-- /ko -->
+              </div>
+              <div class="span3">
+                <!-- ko foreach : plans -->
+                  <!-- ko if : $index()%4 == 3 --><!-- /ko -->
+                <!-- /ko -->
+              </div>
+            </div>
+          <!-- /ko -->
+          <!-- ko if: $root.topicsView() == 'list1' --><!-- /ko -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+
+          
+          
+
+          
+          
+
+          
+          
+
+          
+          
+<div class="tab-pane row-fluid" id="lC">
+  <div class="formPane">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="edit-profile-form span8 offset2">
+          <div class="row-fluid account-card">
+            
+            
+            <form action="/dashboard/profile" method="post" class="eltropy-classic-form form-horizontal">
+              <div class="m-top-20"></div>
+              <div class="m-top-20 row-fluid">
+                <h5>
+                  <label class="span12" for="userName">User Name</label>
+                </h5>
+                <input type="text" class="span12" name="userName" id="userName" value="" />
+              </div>
+              <div class="row-fluid">
+                <h5>
+                  <label class="span12" for="firstName">First Name</label>
+                </h5>
+                <input type="text" class="span12" name="firstName" id="firstName" value="Piyush" />
+              </div>
+              <div class="row-fluid">
+                <h5>
+                  <label class="span12" for="lastName">Last Name</label>
+                </h5>
+                <input type="text" class="span12" name="lastName" id="lastName" value="Ranjan" />
+              </div>
+              <div class="row-fluid">
+                <h5>
+                  <label class="span12" for="accountpgEmail">Email</label>
+                </h5>
+                <input type="text" class=" span12" name="emailId" id="accountpgEmail" value="piyush19jan@gmail.com" disabled="" />
+              </div>
+              <div class="row-fluid m-top-20">
+                
+                  <div class="connectEmail">
+                    <h4>Set Password</h4>
+                    <i class="icon-caret-down icon-3x"></i>
+                  </div>
+                
+              </div>
+              <div id="changePassword" class="row-fluid">
+                
+                <div class="row-fluid">
+                  <h5>
+                    <label class="span12" for="newPassword">New Password</label>
+                  </h5>
+                  <input type="password" placeholder="New Password" class="span12" name="password" id="newPassword" /><br />
+                </div>
+                <div class="row-fluid">
+                  <h5>
+                    <label class="span12" for="confirmPassword">Re-type New Password</label>
+                  </h5>
+                  <input type="password" placeholder="Re-type New Password" class="span12" name="confirmPassword" id="confirmPassword" /><br />
+                </div>
+              </div>
+              <div class="row-fluid m-top-20">
+                <button class="btn btn-success account-update-btn" type="submit">Update</button>
+              </div>
+            </form>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="newDiscussionModal" class="eltropy-modal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="subTopicLabel" aria-hidden="true" data-bind="with: $root.tempDiscussion">
+    <div class="modal-header gdrive-modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h3 id="myModalLabel" data-bind="text: id == null?'New Discussion':'Edit Discussion'"></h3>
+    </div>
+
+    <div class="modal-body eltropy-classic-form">
+      <div id="alert-newDiscussionModal" class="alert alert-error fade in hide"></div>
+      <div class="row-fluid">
+        <input type="text" placeholder="Discussion Subject" data-bind="value: title" class="span12" />
+        <textarea type="text" placeholder="Discussion Content" class="span12" data-bind="value: description"></textarea>
+      </div>
+      <div data-bind="visible: id != null">
+        User groups:<br />
+        <select data-bind="options: userGroups,
+                           optionsText: 'name',
+                           optionsValue: 'id'" id="userGroupList" multiple=""></select>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button class="btn btn-primary" data-bind="click: createDiscussion, text: id == null?'Create':'Save'"></button>
+    </div>
+  </div>
+  <div id="newModuleModal" class="eltropy-modal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="subTopicLabel" aria-hidden="true" data-bind="with: $root.tempModule">
+    <div class="modal-header gdrive-modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h3 id="moduleModalLabel" data-bind="text: id()?'Edit Module':'New Module'"></h3>
+    </div>
+
+    <div class="modal-body eltropy-classic-form">
+      <div id="alert-newModuleModal" class="alert alert-error fade in hide"></div>
+      <div class="row-fluid">
+        <input type="text" placeholder="Module Name" data-bind="value: name" class="span12" />
+        <textarea type="text" placeholder="Module Description" class="span12" data-bind="value: description"></textarea>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button class="btn btn-primary" data-bind="click: saveModule, text: id == null?'Create':'Save'"></button>
+    </div>
+  </div>
+  <div id="newTopicModal" class="eltropy-modal modal hide fade" tabindex="-1" role="dialog" aria-labelledby="subTopicLabel" aria-hidden="true" data-bind="with: $root.tempTopic">
+    <div class="modal-header gdrive-modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h3>New Topic</h3>
+    </div>
+
+    <div class="modal-body eltropy-classic-form">
+      <div id="alert-newTopicModal" class="alert alert-error fade in hide"></div>
+      <div class="row-fluid">
+        <input type="text" placeholder="Topic Name" data-bind="value: name" class="span12" />
+        <textarea type="text" placeholder="Topic Description" class="span12" data-bind="value: description"></textarea>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button class="btn btn-primary" data-bind="click: $root.createTopic, text: id == null?'Create':'Save'"></button>
+    </div>
+  </div>
+
+  <script type="text/html" id="popoverTemplate">
+    &lt;div class="eltropy-classic-form" id="share-popver" data-bind="click: function() { return true; }, clickBubble: false"&gt;
+      &lt;h4&gt;Share &lt;!-- ko text: $root.currentTopicName() --&gt; &lt;!-- /ko --&gt; &lt;button class="close pull-right" type="button" data-bind="click: $root.dismissPopover"&gt;×&lt;/button&gt;&lt;/h4&gt;
+      &lt;div class="alert-shareTopicPopover alert alert-error fade in hide"&gt;
+        &lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div id="alert-success-shareTopicPopover" class="alert alert-success fade in hide"&gt;
+        Successfully shared &lt;span data-bind="text: $root.currentTopicName()"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="share-form-con"&gt;
+        &lt;div class="control-group"&gt;
+          &lt;div class="controls row-fluid"&gt;
+            &lt;input type="text" id="inputName" placeholder="Name"
+              data-bind="value:$root.shareTopicName" class="span12 purpleInput"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="control-group"&gt;
+          &lt;div class="controls row-fluid"&gt;
+            &lt;input type="text" id="inputEmail" placeholder="Email"
+              data-bind="value:$root.shareTopicEmail" class="span12 purpleInput"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="control-group"&gt;
+            &lt;div class="controls row-fluid"&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" id="radio_useEmailClientForSharing" name="shareClientGroup" value="true" data-bind="checked: $root.useEmailClientForSharing"&gt;Share using email client
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" id="radio_useEltropyClientForSharing" name="shareClientGroup" value="false" data-bind="checked: $root.useEmailClientForSharing"&gt;Share using Eltropy mail
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="row-fluid"&gt;
+          &lt;button class="btn btn-primary span4 offset4" id="shareTopicBtn" data-bind="click:$root.useEmailClientForSharing()=='true'?$root.shareTopicByEmail:$root.shareTopic"&gt;Share&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </script>
+  <script type="text/html" id="card-template">
+    &lt;div class="span12 card e-topic-card" data-bind="attr : { id: 'plan-'+topicId }, css: $root.setCorner(percentComplete), click: $root.viewTopicById.bind($data, topicId, name)"&gt;
+      &lt;div class="card-heading simple"&gt;
+        &lt;a data-bind="text: name"&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="notification-label" data-bind="text: nChaptersUpdated, visible: (nChaptersUpdated &gt; 0), attr: { 'data-original-title' : nChaptersUpdated + ' chapters updated' }" data-toggle="tooltip" data-container="body"&gt;&lt;/div&gt;
+      
+        &lt;!-- ko if: dropdownAccess || editAccess --&gt;
+          &lt;div class="card-dropdown-con"&gt;
+            &lt;div class="metric-con metric-dd-button"&gt;
+              &lt;div data-toggle="dropdown" data-bind="click: $root.toggleDropdown, clickBubble: false"&gt;
+                &lt;span class="icon-caret-down"&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;ul role="menu" class="dropdown-menu"&gt;
+                &lt;!-- ko if: editAccess --&gt;
+                  &lt;li&gt;
+                    &lt;a data-bind="click: function(){ return true }, clickBubble: false, attr: { href: '/edit/topic/'+topicId }"&gt;Edit&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;!-- /ko --&gt;
+                &lt;!-- ko if: true || (editAccess || false) --&gt;
+                  &lt;li&gt;
+                    &lt;a class="share-popover-btn" data-bind="popover: {template: 'popoverTemplate', placement: 'bottom', container: '#plan-' + topicId},
+                      click: $root.setShareTopicDetails.bind($data,topicId,name), clickBubble: false, visible: true" data-placement="bottom"&gt;Share&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;!-- /ko --&gt;
+                &lt;!-- ko if: false --&gt;
+                  &lt;li&gt;
+                    &lt;a data-bind="click: function(){return true}, clickBubble: false, attr: { href: '/analytics/?f=' + topicId + '&amp;t=sUser' }"&gt;Analytics&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;!-- /ko --&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;!-- /ko --&gt;
+      
+      &lt;!-- ko if: curator != null --&gt;
+        &lt;div class='card-curated'&gt;
+          Curated By&lt;br&gt;
+          &lt;span data-bind="text: curator"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;!-- /ko --&gt;
+      &lt;div class="drag-text hide text-center"&gt;&lt;i class="icon-move"&gt;&lt;/i&gt; DRAG &amp; DROP&lt;/div&gt;
+    &lt;/div&gt;
+  </script>
+  <script type="text/html" id="list-template">
+    &lt;div class="plan-card-con plan-list-con" data-bind="click: $root.viewTopicById.bind($data, topicId, name)"&gt;
+      &lt;div class="span12 card e-topic-card list1" data-bind="attr : { id: 'plan-'+topicId }, css: $root.setCorner(percentComplete)"&gt;
+        &lt;div class="card-heading simple"&gt;
+          &lt;a data-bind="text: name"&gt;&lt;/a&gt;
+          &lt;!-- ko if: curator != null --&gt;
+            &lt;div class='list-curated'&gt;
+              Curated By
+              &lt;span data-bind="text: curator"&gt;&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;!-- /ko --&gt;
+        &lt;/div&gt;
+        &lt;div class="notification-label" data-bind="text: nChaptersUpdated, visible: (nChaptersUpdated &gt; 0), attr: { 'data-original-title' : nChaptersUpdated + ' chapters updated' }" data-toggle="tooltip" data-container="body"&gt;&lt;/div&gt;
+        
+          &lt;!-- ko if: dropdownAccess || editAccess --&gt;
+            &lt;div class="card-dropdown-con"&gt;
+              &lt;div class="metric-con metric-dd-button"&gt;
+                &lt;div data-toggle="dropdown" data-bind="click: $root.toggleDropdown, clickBubble: false"&gt;
+                  &lt;span class="icon-caret-down icon-2x"&gt;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;ul role="menu" class="dropdown-menu"&gt;
+                  &lt;!-- ko if: editAccess --&gt;
+                    &lt;li&gt;
+                      &lt;a data-bind="click: function(){ return true }, clickBubble: false, attr: { href: '/edit/topic/'+topicId }"&gt;Edit&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;!-- /ko --&gt;
+                  &lt;!-- ko if: true || (editAccess || false) --&gt;
+                    &lt;li&gt;
+                      &lt;a class="share-popover-btn" data-bind="popover: {template: 'popoverTemplate', placement: 'bottom', container: '#plan-' + topicId},
+                        click: $root.setShareTopicDetails.bind($data,topicId,name), clickBubble: false, visible: true" data-placement="bottom"&gt;Share&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;!-- /ko --&gt;
+                  &lt;!-- ko if: false --&gt;
+                    &lt;li&gt;
+                      &lt;a data-bind="click: function(){return true}, clickBubble: false, attr: { href: '/analytics/?f=' + topicId + '&amp;t=sUser' }"&gt;Analytics&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;!-- /ko --&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;!-- /ko --&gt;
+        
+      &lt;/div&gt;
+      &lt;!-- ko if: type == 'plan' --&gt;
+      &lt;div class="chartContainer span12"&gt;
+        &lt;div class="span5 chart-remaining pull-right"&gt;
+          &lt;!-- ko if: percentComplete == 100 --&gt;
+            &lt;i class="icon-ok icon-2x"&gt;&lt;/i&gt;
+          &lt;!-- /ko --&gt;
+          &lt;!-- ko ifnot: percentComplete == 100 --&gt;
+            &lt;!-- ko if: chaptersRemaining != '0 CHAPTERS' --&gt;
+              &lt;span class="remaining-label" data-bind="text: chaptersRemaining"&gt;&lt;/span&gt;
+            &lt;!-- /ko --&gt;
+            &lt;!-- ko ifnot: chaptersRemaining != '0 CHAPTERS' --&gt;
+              &lt;span class="remaining-label" data-bind="text: quizesRemaining"&gt;&lt;/span&gt;
+            &lt;!-- /ko --&gt;
+            &lt;span class="remaining-label"&gt;REMAINING&lt;/span&gt;
+          &lt;!-- /ko --&gt;
+        &lt;/div&gt;
+        &lt;div class="plan-card-pie-con" data-bind="attr: {'data-original-title': 'You have reviewed '+percentComplete+'% of the content in this topic'}" data-placement="top" data-toggle="tooltip" &gt;
+          &lt;canvas class="pieChart" data-bind="attr: {'progress': percentComplete}" height="30px" width="30px"&gt;&lt;/canvas&gt;
+          &lt;div class="chartLabel pull-left" data-bind="text: percentComplete+'%'"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- /ko --&gt;
+    &lt;/div&gt;
+  </script>
+  <script type="text/html" id="module-template">
+    &lt;div class="span12 card e-topic-card e-topic-card-blue" data-bind="click: $root.selectModule, attr : { id: 'module-'+id() }"&gt;
+      &lt;div class="card-heading simple" data-bind="text: name"&gt;
+      &lt;/div&gt;
+      &lt;div class="card-topic-count"&gt;
+        &lt;!-- ko text: topics().length --&gt;&lt;!-- /ko --&gt; 
+        &lt;!-- ko if: topics().length == 1 --&gt;Topic&lt;!-- /ko --&gt;
+        &lt;!-- ko if: topics().length != 1 --&gt;Topics&lt;!-- /ko --&gt;
+      &lt;/div&gt;
+      &lt;div class="card-topic-description" data-bind="text: description"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </script>
+  <script type="text/html" id="search-result-template">
+    &lt;div class="search-result clearfix" data-bind="click: $root.viewTopicById.bind($data, topicId, name)"&gt;
+      &lt;span data-bind="text: name" class="topic-title"&gt;&lt;/span&gt;
+      
+    &lt;/div&gt;
+  </script>
+  <script type="text/javascript">
+    var plans = "";
+    
+    var sessionUserEmail = "piyush19jan@gmail.com";
+    var tab = "";
+    var userGroups = "";
+    /* The dropdown on the topic tile should be shown to all uses except regular uses when advanced user groups is enabled */
+    var dropdownAccess = true;
+
+    var managerAboveAccess = false;
+
+    
+    var oneDriveAccountEmail = ""
+
+    
+    
+    
+  </script>
+  <style>
+    .popover {
+        max-width: 500px;
+        width: 300px;
+    }
+  </style>
+
+  </div>
+
+  
+  
+    <a class="powered-by" href="http://www.eltropy.com" target="_blank" id="main-powered-by" style="display: none;">
+      <div>Powered By</div>
+      <div>Eltropy</div>
+    </a>
+  
+
+  
+  
+    <div id="feedbackCon">
+      <div id="feedback-btn">
+        <i class="icon-edit"></i>
+        <div>FEEDBACK</div>
+      </div>
+      <div id="feedback-form" class="span4">
+        <div class="alert alert-success fade in" style="display: none;">
+          Your feedback has been successfully submitted.
+        </div>
+        <div class="alert alert-error fade in">
+          There was an error in submitting your feedback, please retry.
+        </div>
+        <form class="eltropy-classic-form">
+          <div class="control-group">
+            <div class="controls row-fluid">
+              <h5>Name *</h5>
+              <input type="text" id="inputName" placeholder="Name" class="span12 purpleInput" value="Piyush" />
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls row-fluid">
+              <h5>Email ID *</h5>
+              <input type="text" id="inputEmail" placeholder="Email" class="span12 purpleInput" value="piyush19jan@gmail.com" />
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls row-fluid">
+              <h5>Category</h5>
+              <select id="inputCategory" class="span12">
+                <option value="Query">Query</option>
+                <option value="Issue">Issue</option>
+                <option value="Like">Like</option>
+                <option value="Suggestion">Suggestion</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls row-fluid">
+              <h5>Feedback *</h5>
+              <textarea placeholder="Feedback" class="span12 purpleInput" id="feedbackText"></textarea>
+            </div>
+          </div>
+          <div class="row-fluid feedback-button-con">
+            <div class="btn btn-primary span4 offset2" id="feedback-submit-btn">Submit</div>
+            <div class="btn span4 cancel-btn">Cancel</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+
+  <script>
+    
+    var isMobile = {
+      Android : function() {
+        return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry : function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS : function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera : function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows : function() {
+        return navigator.userAgent.match(/IEMobile/i);
+      },
+      any : function() {
+        return (isMobile.Android()
+          || isMobile.BlackBerry()
+          || isMobile.iOS()
+          || isMobile.Opera()
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/Windows Phone/i)
+          || isMobile.Windows());
+      }
+    };
+
+    if (document.getElementById('iconNavBar')) {
+      document.getElementById('iconNavBar').style.right = document.getElementById("nav-dd-con").offsetWidth+"px";
+    }
+  </script>
+
+  
+  
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43241991-1', 'eltropy.com');
+      ga('send', 'pageview');
+
+      // Google Analytics Custom Dimension
+      ga('send', 'pageview', {
+        'dimension1': "209798"
+      });
+    </script>
+  
+
+  <script>window.eltropy_application_version = "1.10.1";</script>
+  
+  <script>window.ELVer = "1.10.1";</script>
+
+  
+  <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&amp;&amp;(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&amp;&amp;(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g&lt;i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);mixpanel.init('01daf4b6ac568009b6a031ffea36e5be');
+  </script>
+  
+
+  
+  <script type="text/javascript">
+    mixpanel.set_config({ cross_subdomain_cookie: false });
+    mixpanel.register({"ip-address":"116.74.33.29"});
+    
+      mixpanel.identify("piyush19jan@gmail.com");
+      mixpanel.register({"email":"piyush19jan@gmail.com"});
+    
+    
+      mixpanel.track("signed in", {
+        "auth method": 'LinkedIn'
+      });
+      mixpanel.people.set({
+        "$email": "piyush19jan@gmail.com",
+        "$first_name": "Piyush",
+        "domain_role": "USER"
+      });
+    
+    
+    
+
+    mixpanel.track_links("#nav-logo", "clicked nav logo");
+    mixpanel.track_links("#nav-dashboard-icon", "clicked nav dashboard");
+    mixpanel.track_links("#nav-analytics-icon", "clicked nav analytics");
+    mixpanel.track_links("#nav-settings-icon", "clicked nav settings");
+  </script>
+  
+
+
+
+</body></html>
