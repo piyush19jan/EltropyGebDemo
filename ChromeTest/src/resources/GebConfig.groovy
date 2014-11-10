@@ -11,7 +11,7 @@ environments {
     // run via “./gradlew chromeTest”
     // See: http://code.google.com/p/selenium/wiki/ChromeDriver
     chrome {
-        File chromeDriverLocation = new File("./resources/chromedriver_LINUX_64")
+        File chromeDriverLocation = new File("/resources/chromedriver_LINUX_64")
         ChromeDriverService chromeDriverService   = new ChromeDriverService.Builder()
                 .usingDriverExecutable(chromeDriverLocation)
                 .usingAnyFreePort().withEnvironment("DISPLAY", ":1").build()
