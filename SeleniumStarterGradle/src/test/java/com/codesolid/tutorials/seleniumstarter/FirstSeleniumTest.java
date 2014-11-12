@@ -57,7 +57,13 @@ public class FirstSeleniumTest {
                         //.withEnvironment("DISPLAY", ":1").build()
                 .withEnvironment(ImmutableMap.of("DISPLAY", ":1")).build();
         chromeDriverService.start();
-        driver = new ChromeDriver(chromeDriverService);
+		
+		DesiredCapabilities dc = DesiredCapabilities.chrome();
+ChromeOptions options = new ChromeOptions();
+options.addArguments("--start-maximized");
+dc.setCapability(ChromeOptions.CAPABILITY,options);
+driver = new RemoteWebDriver(service.getUrl(), dc);
+        //driver = new ChromeDriver(chromeDriverService);
     }
 
     @Test
